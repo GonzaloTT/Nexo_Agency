@@ -1,0 +1,51 @@
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 0;
+}
+.hero__eyebrow {
+  color: var(--yellow);
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+.hero__title {
+  font-size: 2.4rem;
+  margin: 0 0 0.6rem;
+  line-height: 1.05;
+  color: var(--white);
+}
+.hero__desc {
+  color: #d6d6d6;
+  margin-bottom: 1.25rem;
+}
+.hero__actions {
+  display: flex;
+  gap: 1rem;
+}
+.hero__card {
+  background: linear-gradient(180deg, #0f0f0f, #141414);
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.hero__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+.stat__num {
+  font-weight: 800;
+  color: var(--yellow);
+  font-size: 1.25rem;
+}
+.stat__label {
+  color: #bdbdbd;
+  font-size: 0.85rem;
+}

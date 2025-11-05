@@ -1,0 +1,25 @@
+/* Portfolio */
+.portfolio {
+  padding: 2rem 0;
+}
+.portfolio__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.portfolio__item {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.portfolio__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.6));
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.portfolio__title {
+  font-weight: 700;
+}

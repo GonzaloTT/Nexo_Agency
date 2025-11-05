@@ -1,0 +1,39 @@
+/* Responsive Breakpoints (mobile-first) */
+@media (max-width: 1000px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .about {
+    flex-direction: column;
+  }
+  .header__nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: inline-flex;
+  }
+}
+@media (max-width: 640px) {
+  .page {
+    padding: 0.75rem;
+  }
+  .hero__title {
+    font-size: 1.6rem;
+  }
+  .services__grid {
+    grid-template-columns: 1fr;
+  }
+  .portfolio__grid {
+    grid-template-columns: 1fr;
+  }
+  .header__logo {
+    width: 40px;
+    height: 40px;
+  }
+}

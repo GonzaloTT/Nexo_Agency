@@ -1,0 +1,45 @@
+/* About & Contact */
+.about {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem 0;
+}
+.about__media {
+  flex: 0 0 300px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.contact {
+  padding: 2rem 0;
+}
+.contact__form {
+  background: #0f0f0f;
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+.form__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+.form__input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 0.65rem;
+  border-radius: 8px;
+  color: var(--white);
+}
+.form__textarea {
+  min-height: 110px;
+}
+.form__submit {
+  background: var(--yellow);
+  color: var(--black);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}

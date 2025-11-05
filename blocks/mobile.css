@@ -1,0 +1,42 @@
+/* Mobile menu */
+.mobile-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* Mobile menu overlay */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at 10% 10%,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.95)
+  );
+  display: none;
+  z-index: 60;
+  padding: 2rem;
+}
+.menu-overlay--open {
+  display: block;
+}
+.menu {
+  max-width: 360px;
+  margin: 0 auto;
+}
+.menu__item {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Small accessibility focus */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid rgba(255, 212, 0, 0.18);
+  outline-offset: 2px;
+}

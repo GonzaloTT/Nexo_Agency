@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>Nexo Agencia de Marketing | Estrategia, Diseño y Performance</title>
+    <meta
+      name="description"
+      content="Nexo - Agencia de marketing digital en Querétaro. Servicios de branding, marketing de performance, desarrollo web y estrategia para hacer crecer marcas creativas."
+    />
+    <meta
+      name="keywords"
+      content="agencia de marketing, marketing digital, branding, Querétaro, SEO, diseño web"
+    />
+    <meta name="author" content="Nexo Agencia" />
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Nexo Agencia de Marketing | Estrategia, Diseño y Performance"
+    />
+    <meta
+      property="og:description"
+      content="Nexo - Agencia de marketing digital en Querétaro. Creamos estrategias, diseño y campañas para marcas creativas."
+    />
+    <meta property="og:url" content="https://nexo.example.com/" />
+    <meta property="og:image" content="/assets/og-image.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Nexo Agencia de Marketing",
+        "url": "https://nexo.example.com",
+        "logo": "https://nexo.example.com/assets/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/nexo",
+          "https://www.instagram.com/nexo"
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+52-442-000-0000",
+            "contactType": "customer service",
+            "areaServed": "MX"
+          }
+        ]
+      }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon (replace with your own) -->
+    <link rel="icon" href="./images/" />
+
+    <!-- Stlyes CSS Variables -->
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+
+  <body>
+    <header class="header page" role="banner">
+      <div class="header__brand">
+        <div class="header__logo" aria-hidden="true">NX</div>
+        <div>
+          <div class="header__title">Nexo</div>
+          <div
+            class="header__tagline"
+            style="font-size: 0.82rem; color: #bdbdbd"
+          >
+            Agencia de Marketing
+          </div>
+        </div>
+      </div>
+
+      <nav class="header__nav" role="navigation" aria-label="Menú principal">
+        <div class="nav">
+          <a class="nav__link" href="#servicios">Servicios</a>
+          <a class="nav__link" href="#portafolio">Portafolio</a>
+          <a class="nav__link" href="#nosotros">Nosotros</a>
+          <a class="nav__link" href="#contacto">Contacto</a>
+        </div>
+        <a class="cta" href="#contacto">Cotizar proyecto</a>
+      </nav>
+
+      <button class="mobile-toggle" aria-label="Abrir menú" id="mobileToggle">
+        ☰
+      </button>
+    </header>
+
+    <!-- Mobile menu overlay -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true">
+      <div class="menu" role="menu">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+          "
+        >
+          <div style="display: flex; gap: 0.75rem; align-items: center">
+            <div class="header__logo" style="width: 36px; height: 36px">NX</div>
+            <strong>Nexo</strong>
+          </div>
+          <button
+            aria-label="Cerrar menú"
+            id="menuClose"
+            style="
+              background: transparent;
+              border: 0;
+              font-size: 22px;
+              color: #fff;
+            "
+          >
+            ✕
+          </button>
+        </div>
+        <a class="menu__item" href="#servicios">Servicios</a>
+        <a class="menu__item" href="#portafolio">Portafolio</a>
+        <a class="menu__item" href="#nosotros">Nosotros</a>
+        <a class="menu__item" href="#contacto">Contacto</a>
+        <div style="margin-top: 1rem">
+          <a class="cta" href="#contacto">Cotizar proyecto</a>
+        </div>
+      </div>
+    </div>
+
+    <main class="page" id="top">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="hero__eyebrow">Agencia • Marketing • Performance</div>
+          <h1 class="hero__title" id="hero-title">
+            Conectamos marcas con clientes que importan.
+          </h1>
+          <p class="hero__desc">
+            Estrategia, creatividad y datos para empresas y proyectos
+            culturales. Diseñamos campañas, productos digitales y experiencias
+            que convierten.
+          </p>
+          <div class="hero__actions">
+            <a class="cta" href="#contacto">Empezar proyecto</a>
+            <a class="nav__link" href="#portafolio">Ver portafolio</a>
+          </div>
+        </div>
+
+        <aside class="hero__card" aria-label="Estadísticas rápidas">
+          <div class="hero__list">
+            <div class="stat">
+              <div class="stat__num">+120%</div>
+              <div class="stat__label">Crecimiento promedio para clientes</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">40+</div>
+              <div class="stat__label">Proyectos entregados</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">Equipo remoto</div>
+              <div class="stat__label">Diseñadores y estrategas</div>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- SERVICES -->
+      <section
+        class="services"
+        id="servicios"
+        aria-labelledby="services-heading"
+      >
+        <h2 id="services-heading" style="margin: 0 0 1rem">Servicios</h2>
+        <p style="color: #bdbdbd; margin-bottom: 1rem">
+          Servicios pensados para marcas creativas y proyectos culturales.
+        </p>
+        <div class="services__grid">
+          <article class="service" aria-labelledby="s1">
+            <div class="service__icon">B</div>
+            <h3 class="service__title" id="s1">Branding & Identidad</h3>
+            <p class="service__desc">
+              Construcción de identidad visual, naming, guideline y
+              posicionamiento de marca.
+            </p>
+          </article>
+          <article class="service" aria-labelledby="s2">
+            <div class="service__icon">M</div>
+            <h3 class="service__title" id="s2">Marketing Digital</h3>
+            <p class="service__desc">
+              Campañas en redes, performance, funnels y automatizaciones que
+              convierten.
+            </p>
+          </article>
+          <article class="service" aria-labelledby="s3">
+            <div class="service__icon">W</div>
+            <h3 class="service__title" id="s3">Desarrollo Web</h3>
+            <p class="service__desc">
+              Landing pages, sitios corporativos y tiendas online optimizadas
+              para SEO y velocidad.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- PORTFOLIO -->
+      <section
+        class="portfolio"
+        id="portafolio"
+        aria-labelledby="portfolio-heading"
+      >
+        <h2 id="portfolio-heading">Portafolio</h2>
+        <p style="color: #bdbdbd; margin-bottom: 1rem">
+          Proyectos seleccionados — enfoque en resultados y diseño humano.
+        </p>
+        <div class="portfolio__grid">
+          <figure class="portfolio__item">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&q=70&auto=format&fit=crop"
+              alt="Campaña de branding"
+            />
+            <figcaption class="portfolio__overlay">
+              <div>
+                <div class="portfolio__title">Campaña: Festival Local</div>
+                <div style="color: #dfdfdf; font-size: 0.9rem">
+                  Estrategia digital + redes
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__item">
+            <img
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=1200&q=70&auto=format&fit=crop"
+              alt="Sitio web para artista"
+            />
+            <figcaption class="portfolio__overlay">
+              <div>
+                <div class="portfolio__title">Sitio web: Galería</div>
+                <div style="color: #dfdfdf; font-size: 0.9rem">
+                  Diseño y tienda online
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="portfolio__item">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200&q=70&auto=format&fit=crop"
+              alt="Producción audiovisual"
+            />
+            <figcaption class="portfolio__overlay">
+              <div>
+                <div class="portfolio__title">Contenido audiovisual</div>
+                <div style="color: #dfdfdf; font-size: 0.9rem">
+                  Producción y edición
+                </div>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about" id="nosotros" aria-labelledby="about-heading">
+        <div>
+          <h2 id="about-heading">Sobre Nexo</h2>
+          <p style="color: #bdbdbd">
+            Nexo es una agencia que combina datos, creatividad y conexiones
+            locales para impulsar proyectos culturales y marcas. Trabajamos en
+            estrategia, performance y diseño para ayudar a clientes a crecer de
+            forma sostenible.
+          </p>
+          <ul style="color: #bdbdbd">
+            <li>Metodología: Auditar → Estrategia → Ejecutar</li>
+            <li>Propuesta: tarifas claras y entregas periódicas</li>
+            <li>Ubicación: Querétaro (servicio remoto disponible)</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <img
+            src="https://images.unsplash.com/photo-1522199710521-72d69614c702?w=800&q=60&auto=format&fit=crop"
+            alt="Equipo creativo"
+            style="width: 100%; height: 100%; object-fit: cover"
+          />
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact" id="contacto" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contacto</h2>
+        <p style="color: #bdbdbd">
+          ¿Listo para comenzar? Cuéntanos tu proyecto y te mandamos una
+          propuesta.
+        </p>
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 380px;
+            gap: 1rem;
+            margin-top: 1rem;
+            align-items: start;
+          "
+        >
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form__row">
+              <label for="name">Nombre</label>
+              <input
+                id="name"
+                name="name"
+                class="form__input"
+                type="text"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div class="form__row">
+              <label for="email">Correo</label>
+              <input
+                id="email"
+                name="email"
+                class="form__input"
+                type="email"
+                placeholder="correo@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="form__row">
+              <label for="message">Mensaje</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form__input form__textarea"
+                placeholder="Cuéntanos sobre el proyecto"
+                required
+              ></textarea>
+            </div>
+            <div style="display: flex; gap: 0.6rem; align-items: center">
+              <button type="submit" class="form__submit">Enviar</button>
+              <div
+                id="formStatus"
+                style="color: #d6d6d6; font-size: 0.95rem"
+              ></div>
+            </div>
+          </form>
+
+          <aside
+            style="
+              background: #0f0f0f;
+              padding: 1rem;
+              border-radius: 12px;
+              border: 1px solid rgba(255, 255, 255, 0.03);
+            "
+          >
+            <h3 style="margin-top: 0">Datos</h3>
+            <p style="color: #bdbdbd; margin: 0.2rem 0">
+              Email: hola@nexo.example
+            </p>
+            <p style="color: #bdbdbd; margin: 0.2rem 0">
+              Tel: +52 442 000 0000
+            </p>
+            <p style="color: #bdbdbd; margin: 0.2rem 0">
+              Ubicación: Querétaro, MX
+            </p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer page" role="contentinfo">
+      <div>
+        © <span id="year"></span> Nexo Agencia. Todos los derechos reservados.
+      </div>
+      <div style="display: flex; gap: 1rem; align-items: center">
+        <a href="#">Aviso de privacidad</a>
+        <a href="#">Términos</a>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>

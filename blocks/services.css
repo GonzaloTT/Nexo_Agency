@@ -1,0 +1,36 @@
+/* Services */
+.services {
+  padding: 2rem 0;
+}
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.service {
+  background: linear-gradient(180deg, #101010, #0b0b0b);
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  min-height: 140px;
+}
+.service__icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  background: var(--yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-weight: 800;
+  margin-bottom: 0.6rem;
+}
+.service__title {
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+.service__desc {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+}
